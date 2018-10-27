@@ -134,8 +134,9 @@ var clonedElement = document.getElementById("about").cloneNode(true);
 $("#wrap").empty();
 
 // Vanilla
-var wrap = document.getElementById("wrap");
-while (wrap.firstChild) wrap.removeChild(wrap.firstChild);
+document.getElementById("wrap").innerHTML='';
+// or since ie 12
+document.getElementById("wrap").remove;
 ```
 
 ## Navigation
